@@ -1,0 +1,26 @@
+<!-------HEADER---->
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(193, 100%, 96%);
+  display: flex;
+  justify-content: flex-start;
+}
+.FirstBloc {
+  width: 30%;
+}
+.SecondBloc {
+  width: 10%;
+}
+.ThirdBloc {
+  width: 10%;
+}
+.FourBloc {
+  width: 20%;
+}
+.FirstBloc,
+.SecondBloc,
+.ThirdBloc,
+.FourBloc {
+  margin: 4% 5%;
+}
+<!-------END FOOTER---->
