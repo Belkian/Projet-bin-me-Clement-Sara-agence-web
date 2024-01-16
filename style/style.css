@@ -10,10 +10,7 @@ a {
 }
 .logo {
 }
-img {
-  height: 50px;
-  width: 50px;
-}
+
 /* ==================HEADER ===================== */
 header {
   background-color: hsl(193, 100%, 96%);
@@ -50,18 +47,30 @@ h1 {
   width: 60%;
   margin: 0 2%;
 }
-
+.headerImg {
+  height: 300px;
+  width: 300px;
+}
 /* ==============  FIN HEADER  ================ */
 
 /* =================    MAIN    ==================== */
 .article {
+  border-radius: 12px;
   width: 90%;
   margin: 50px 5%;
   display: flex;
   justify-content: space-evenly;
-  box-shadow: 0 0 20px rgb(179, 179, 179);
+  align-items: center;
+  box-shadow: 0 0 20px rgb(222, 222, 222);
+  padding: 5% 0;
 }
-
+.articleText {
+  width: 40%;
+}
+.articleImg {
+  height: 300px;
+  width: 300px;
+}
 /* =================  FIN   MAIN    ==================== */
 
 /* 
