@@ -1,0 +1,34 @@
+@media screen and (max-width: 600px) {
+  .article {
+    flex-direction: column;
+  }
+  .articleText {
+    width: 80%;
+    text-align: center;
+  }
+  .logoPrincipal {
+    height: 15px;
+  }
+
+  .invert {
+    flex-direction: column;
+  }
+  .righthead,
+  .lefthead {
+    padding: 20px 0;
+    width: 80%;
+    margin: 15px 10%;
+  }
+  .presentation {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .head {
+    margin: 0 20px;
+    padding: 10px 0 0 0;
+  }
+  .reduc {
+    margin: inherit;
+  }
+}
