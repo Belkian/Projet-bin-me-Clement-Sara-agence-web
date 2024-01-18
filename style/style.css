@@ -89,9 +89,11 @@ a {
   -webkit-filter: brightness(110%);
 }
 
+
 .button-82-pushable:hover .button-82-front {
   transform: translateY(-6px);
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+
 }
 
 .button-82-pushable:active .button-82-front {
@@ -190,17 +192,24 @@ h2 {
 }
 /* =================  FIN   MAIN    ==================== */
 
+
 /*<!-------FOOTER----> */
+
 footer {
   background-color: hsl(192, 100%, 9%);
   color: hsl(193, 100%, 96%);
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  padding-top: 51px;
 }
 .FirstBloc {
   width: 30%;
 }
-.SecondBloc,
+
+.SecondBloc {
+  width: 10%;
+}
+
 .ThirdBloc {
   width: 10%;
 }
@@ -213,4 +222,71 @@ footer {
 .FourBloc {
   margin: 4% 5%;
 }
+
+.Positionlogo {
+  position: relative;
+  left: -18px;
+  top: 61px;
+}
+.Positionicon {
+  position: relative;
+  left: -39px;
+  top: 50px;
+}
+.Positiontel {
+  position: relative;
+  left: -29px;
+  top: 3px;
+}
+.Positionmail {
+  position: relative;
+  left: -33px;
+  top: 30px;
+}
+.Fa-brands {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+.Fa-brands,
+.Fa-twitter,
+.Fa-instagram,
+.Fa-facebook {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+.Hoverrs:hover {
+  color: pink;
+  border: 2px solid pink;
+}
+.Reseauxsociaux {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Fa-regular,
+Fa-copyrightposition {
+  position: relative;
+  left: -23px;
+  top: 38px;
+}
+.Logo {
+  filter: grayscale(1) brightness(10);
+  position: relative;
+  left: -36px;
+  top: 15px;
+  width: 144px;
+}
+.IconeTelephone {
+  display: flex;
+}
+.IconeEmail {
+  display: flex;
+}
+
 /* <!-------END FOOTER----> */
