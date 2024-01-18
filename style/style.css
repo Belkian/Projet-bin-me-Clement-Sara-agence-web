@@ -12,25 +12,109 @@ a {
   color: white;
   font-weight: 700;
 }
-.logo {
-  height: 50px;
-  width: 100%;
-}
-.button {
+
+/* ==================   Button     ================ */
+/* .button {
   background-color: pink;
   height: 35px;
   text-align: center;
   border-radius: 50px;
-  box-shadow: inset 0px 0px black;
+  box-shadow: inset 0px -2px 0px 0px rgb(184, 184, 184);
   padding: 10px 45px 0 45px;
   width: max-content;
 }
-.button:hover {
-  box-shadow: 0 0 15px rgb(198, 198, 198);
-}
+
 .button:active {
-  box-shadow: inset -5px 5px rgb(184, 184, 184);
+  box-shadow: inset 0px 0px black;
+} */
+
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 20px 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(
+    to left,
+    hsl(322, 100%, 16%) 0%,
+    hsl(322, 100%, 32%) 8%,
+    hsl(322, 100%, 32%) 92%,
+    hsl(322, 100%, 16%) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 50px;
+  font-size: 18px;
+  color: white;
+  background: hsl(322, 100%, 66%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+/* .button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+} */
+
+/* ==================== FIN Button =============== */
+
 /* ==================HEADER ===================== */
 header {
   background-image: url(../media/bg_hero_desktop.svg);
@@ -43,7 +127,7 @@ h1 {
 .logoPrincipal {
   height: 30px;
 }
-.head {
+.header {
   margin: 0 40px;
   padding: 20px 0 0 0;
   align-items: center;
@@ -55,29 +139,34 @@ h1 {
   background-color: white;
 }
 .presentation {
-  padding: 70px 0;
+  padding: 30px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.lefthead {
+.BlockLeftHeader {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.righthead {
+.BlockRightHeader {
   width: 50%;
 }
-.reduc {
+/* .reduc {
   width: 40%;
-}
-.headerImg {
+} */
+.HeaderImg {
   width: 100%;
-  object-fit: contain;
 }
 /* ==============  FIN HEADER  ================ */
 
 /* =================    MAIN    ==================== */
-.article {
-  border-radius: 12px;
+main {
+  padding: 70px 0;
+}
+.Article {
+  border-radius: 25px;
   width: 90%;
   margin: 50px 5%;
   display: flex;
@@ -86,14 +175,17 @@ h1 {
   box-shadow: 0 0 20px rgb(222, 222, 222);
   padding: 5% 0;
 }
-.articleText {
+h2 {
+  color: black;
+}
+.ArticleText {
   width: 40%;
+  color: rgb(165, 165, 165);
 }
-.articleImg {
+.ArticleImg {
   height: 300px;
-  width: 300px;
 }
-.invert {
+.Invert {
   flex-direction: row-reverse;
 }
 /* =================  FIN   MAIN    ==================== */
