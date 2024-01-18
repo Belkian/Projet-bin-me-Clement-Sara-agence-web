@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   header {
     background-image: url(../medias/bg_hero_mobile.svg);
     background-color: hsl(193, 100%, 96%);
@@ -33,6 +33,10 @@
   .Header {
     margin: 0 20px;
     padding: 20px 0 0 0;
+  }
+  .ArticleImg {
+    height: fit-content;
+    width: 100%;
   }
   /* .reduc {
     margin: inherit;
