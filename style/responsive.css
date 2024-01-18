@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px) {
+  header {
+    background-image: url(../medias/bg_hero_mobile.svg);
+    background-color: hsl(193, 100%, 96%);
+  }
+  .Article {
+    flex-direction: column-reverse;
+    padding: 12px;
+  }
+  .ArticleText,
+  h1,
+  h3,
+  p {
+    width: 100%;
+    text-align: center;
+  }
+  .logoPrincipal {
+    height: 15px;
+  }
+
+  .BlockRightHeader,
+  .BlockLeftHeader {
+    padding: 20px 0;
+    width: 80%;
+    margin: 15px 10%;
+  }
+  .presentation {
+    text-align: center;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Header {
+    margin: 0 20px;
+    padding: 20px 0 0 0;
+  }
+  /* .reduc {
+    margin: inherit;
+  } */
+}
