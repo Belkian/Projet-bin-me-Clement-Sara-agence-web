@@ -89,11 +89,9 @@ a {
   -webkit-filter: brightness(110%);
 }
 
-
 .button-82-pushable:hover .button-82-front {
   transform: translateY(-6px);
   transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-
 }
 
 .button-82-pushable:active .button-82-front {
@@ -192,7 +190,6 @@ h2 {
 }
 /* =================  FIN   MAIN    ==================== */
 
-
 /*<!-------FOOTER----> */
 
 footer {
@@ -243,16 +240,16 @@ footer {
   left: -33px;
   top: 30px;
 }
-.Fa-brands {
+.fa-brands {
   color: white;
   font-size: 25px;
   text-align: center;
   padding: 20px;
 }
-.Fa-brands,
-.Fa-twitter,
-.Fa-instagram,
-.Fa-facebook {
+.fa-brands,
+.fa-twitter,
+.fa-instagram,
+.fa-facebook {
   color: white;
   font-size: 25px;
   text-align: center;
@@ -269,8 +266,8 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
-.Fa-regular,
-Fa-copyrightposition {
+.fa-regular,
+.fa-copyright {
   position: relative;
   left: -23px;
   top: 38px;
