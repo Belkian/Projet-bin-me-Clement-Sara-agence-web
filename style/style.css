@@ -195,7 +195,7 @@ h2 {
   color: rgb(165, 165, 165);
 }
 .ArticleImg {
-  height: 250px;
+  height: 140px;
 }
 .Invert {
   flex-direction: row-reverse;
@@ -216,17 +216,18 @@ footer {
   display: flex;
   width: 45%;
 }
-.PosIco {
-}
-.SecondBloc {
-  width: 15%;
-}
 
-.ThirdBloc {
-  width: 15%;
+.SecondBloc {
+  width: 20%;
+  margin-left: 24px;
+  white-space: nowrap;
 }
 .FourBloc {
   width: 25%;
+}
+.ThirdBloc {
+  width: 20%;
+  white-space: nowrap;
 }
 .FirstBloc,
 .SecondBloc,
@@ -246,8 +247,6 @@ footer {
 }
 .Positiontel {
   height: 20px;
-}
-.Positionmail {
 }
 .Fa-brands {
   color: white;
@@ -289,37 +288,41 @@ footer {
   filter: grayscale(1) brightness(10);
   padding: 0 0 0 15px;
   width: 144px;
+  margin-bottom: 16px;
 }
 .IconeTelephone {
   background-image: url(../medias/icon_phone.svg);
   background-repeat: no-repeat;
   padding-left: 25px;
   background-position: 0px;
-  margin-bottom: 18px;
+  margin-bottom: 28px;
 }
 .IconeEmail {
   background-image: url(../medias/icon_email.svg);
   background-repeat: no-repeat;
   padding-left: 25px;
   background-position: 0px;
-}
-.TelSpan {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
-.telwidth {
+.TelWidth {
   width: 100%;
 }
-.IconLocalisation {
+.IconeLocalisation {
   background-image: url(../medias/icon_location.svg);
   background-repeat: no-repeat;
   padding-left: 25px;
   display: flex;
   background-position: 0px 5px;
+  text-align: left;
+  margin-bottom: 20px;
 }
-.IconPolice {
+.IconePolice {
   font-size: 12px;
   text-align: end;
-  margin: 0px;
+  margin: 0px 2%;
 }
 
 .LastButton {
@@ -335,6 +338,10 @@ footer {
   align-items: center;
   padding: 20px 0;
   top: 70px;
+}
+.Underline {
+  text-align: left;
+  width: 2px;
 }
 .Underline:hover {
   text-decoration: underline;
