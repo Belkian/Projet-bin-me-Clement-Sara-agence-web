@@ -48,16 +48,14 @@
     width: 100%;
   }
   .FourBloc {
+    width:50%;
     margin: 0 25% 0 25%;
     margin-bottom: 20px;
   }
   .SecondBloc {
     width: 100%;
   }
-  .Underline {
-    text-align: left;
-    width: 100%;
-  }
+  
 
   .IconePolice {
     text-align: center;
