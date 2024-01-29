@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <link rel="stylesheet" href="./style/formulaire.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +22,78 @@
     <link rel="icon" type="image/x-icon" href="./medias/favicon_32_32.png" />
   </head>
   <body>
+    <div id="tableauxFormulaire">
+      <form method="post" id="formulaire">
+        <h3 class="center">S'inscrire</h3>
+        <label name="NomUtilisateur">Nom d'utilisateur :</label
+        ><input
+          id="NomUtilisateur"
+          type="text"
+          name="NomUtilisateur"
+          placeholder="Clement"
+          maxlength="20"
+          value=""
+        /></br>
+        <label name="Email">Email :</label
+        ><input
+          id="Email"
+          type="email"
+          name="Email"
+          placeholder="name@domain.fr"
+          maxlength="40"
+          value=""
+        /></br>
+        <label name="Password">Password :</label>
+        <input
+          id="Password"
+          type="password"
+          name="Password"
+          id="password"
+          placeholder="password"
+          maxlength="20"
+          value=""
+        />
+        <a id="submit" href="#" class="bottomA" onclick="submit()">
+          <button class="button-82-pushable">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">Valider l'inscription</span>
+          </button>
+        </a>
+      </form>
+
+      <form method="post" id="formulaireConnection">
+        <h3 class="center">Connection</h3>
+        <label name="NomUtilisateur">utilisateur :</label>
+        <input
+          id="NomUtilisateur"
+          type="text"
+          name="NomUtilisateur"
+          placeholder="Clement"
+          maxlength="20"
+          value=""
+        /></br>
+        <label name="Password">Password :</label>
+        <input
+          id="Password"
+          type="password"
+          name="Password"
+          id="password"
+          placeholder="password"
+          maxlength="20"
+          value=""
+        />
+        <a id="connecter" href="#" class="bottomA" onclick="submit()">
+          <button class="button-82-pushable">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">Me connecter</span>
+          </button>
+        </a>
+        <a id="closeForm" href="#" onclick="closeForm()">+</a>
+      </form>
+    </div>
+
     <header>
       <div class="Header">
         <a href="#">
@@ -30,12 +103,11 @@
             alt="Logo Huddle avec une bulle de discussions"
           />
         </a>
-        <a href="#">
-          <!-- <div class="button buttonwhite">Try it for free</div> -->
+        <a href="#" onclick="showform()">
           <button class="button-82-pushable">
             <span class="button-82-shadow"></span>
             <span class="button-82-edge"></span>
-            <span class="button-82-front text">Try It For Free</span>
+            <span class="button-82-front text">se connecter</span>
           </button>
         </a>
       </div>
@@ -48,8 +120,7 @@
             engage in genuine discussion.
           </p>
           <div class="reduc">
-            <a href="#">
-              <!-- <div class="button">Get started for free</div> -->
+            <a href="#blague" onclick="blague()">
               <button class="button-82-pushable">
                 <span class="button-82-shadow"></span>
                 <span class="button-82-edge"></span>
@@ -72,7 +143,7 @@
       <div class="Article">
         <div class="ArticleText">
           <h2>Grow Together</h2>
-          <p>
+          <p id="blague">
             Generate meaningful discussions with your audience and build a
             strong, loyal community. Think of the insightful conversations you
             miss out on with a feedback form.
