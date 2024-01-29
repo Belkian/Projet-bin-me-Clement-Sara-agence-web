@@ -5,7 +5,6 @@
   }
   .Article {
     flex-direction: column-reverse;
-    padding: 12px;
   }
   .ArticleText,
   h1,
@@ -33,5 +32,60 @@
   .Header {
     margin: 0 20px;
     padding: 20px 0 0 0;
+  }
+  .BlocEntire {
+    display: block;
+  }
+  .Reseauxsociaux {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+  .FirstBloc {
+    width: 100%;
+  }
+  .FourBloc {
+    width:50%;
+    margin: 0 25% 0 25%;
+    margin-bottom: 20px;
+  }
+  .SecondBloc {
+    width: 100%;
+  }
+  
+
+  .IconePolice {
+    text-align: center;
+  }
+  .IconeLocalisation {
+    width: 90%;
+    padding-left: 31px;
+    text-align: left;
+  }
+  .IconeEmail {
+    width: 50%;
+    padding-left: 30px;
+    text-align: left;
+    margin-bottom: 27px;
+  }
+  .IconeTelephone {
+    padding-left: 29px;
+  }
+  .TelWidth {
+    margin-bottom: 44px;
+  }
+  .Logo {
+    padding-left: 4px;
+  }
+  .PosText {
+    display: flex;
+    flex-direction: column;
+  }
+  .LastButton {
+    width: 92%;
+    margin: 0 4%;
+  }
+  h2 {
+    text-align: center;
   }
 }
